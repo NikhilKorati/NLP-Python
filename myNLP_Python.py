@@ -5,31 +5,6 @@ import pandas as pd
 
 dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
 
-#Cleaning the texts
-#import re
-#review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][0], )
-#review = review.lower()
-#
-##remove irrelavant words
-#import nltk
-#nltk.download('stopwords')
-#from nltk.corpus import stopwords
-#
-#review = review.split()
-#review = [word for word in review if not word in set(stopwords.words('english'))]
-#
-#
-##stemming
-#from nltk.stem.porter import PorterStemmer
-#ps = PorterStemmer()
-#review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
-#
-#
-##convert list back to string
-#review =  str(' '.join(review))
-
-
-#Repeat the above steps for all reviews
 import re
 import nltk
 nltk.download('stopwords')
